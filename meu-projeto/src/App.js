@@ -1,27 +1,16 @@
+import React from "react"
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  
+  const subject = "React";
   return (
     <div className="App">
-     <div>
-     
-     </div>
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>Hello, {subject}!</p>
+      </header>
     </div>
   );
-}
-
-function Video({video}) {
-  return (
-  <div>
-   <Thumbnail video={video} />
-   <a href={video.url}>
-    <h3>{video.title}</h3>
-    <p>{video.description}</p>
-  </a>
-  <LikeButton video={video} />
-  </div>
-);
 }
 export default App;
